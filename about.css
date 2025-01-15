@@ -1,0 +1,182 @@
+body {
+    margin: 0px;
+}
+
+.screen {
+    background: rgb(104, 9, 52);
+    background: -moz-linear-gradient(45deg, rgba(104, 9, 52, 1) 0%, rgba(16, 12, 48, 1) 50%, rgba(10, 22, 164, 1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(104, 9, 52, 1) 0%, rgba(16, 12, 48, 1) 50%, rgba(10, 22, 164, 1) 100%);
+    background: linear-gradient(45deg, rgba(104, 9, 52, 1) 0%, rgba(16, 12, 48, 1) 50%, rgba(10, 22, 164, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#680934", endColorstr="#0a16a4", GradientType=1);
+    height: 100vh;
+}
+
+.navbar {
+    height: 50px;
+}
+
+.leftnav {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+
+    h2 {
+        color: white;
+    }
+
+    #Raundale {
+        color: red;
+        padding-left: 5px;
+    }
+
+}
+
+.rightnav {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 70px;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: .2;
+    }
+
+    20% {
+        opacity: 1;
+    }
+    100%{
+        opacity: .2;
+    }
+}
+
+
+.fade-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+
+    h1 {
+        margin-top: 90px;
+        color:rgb(255, 21, 0);
+        -webkit-text-stroke: 0.4px;
+        -webkit-text-stroke-color: rgba(51, 0, 255, 0.696);
+    }
+
+    animation: fadeIn 3s ease-in-out;
+    
+    animation-iteration-count: infinite;
+}
+
+.education{
+    display: flex;
+    margin-top: 45px;
+    margin-inline: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.school{
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 33px;
+    img{
+        height: 35px;
+        width: 35px;
+    }
+}
+
+.diploma{
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 30%;
+    img{
+        height: 35px;
+        width: 35px;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+}
+.engineering{
+    display: flex;
+    float: none;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 30%;
+    img{
+        height: 35px;
+        width: 35px;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+}
+.myself{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3{
+        color: white;
+        font-size: 40px;
+    }
+ 
+
+}
+#myslf{
+    
+    color: red;
+    -webkit-text-stroke: 0.6px;
+    -webkit-text-stroke-color: black;
+    
+}
+
+/*This is for the typing animation for learning myself*/
+.myself h3 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 25px auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100vh }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgba(255, 166, 0, 0); }
+  }

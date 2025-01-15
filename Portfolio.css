@@ -1,0 +1,106 @@
+body{
+    margin: 0px;
+}
+.screen{
+    background: rgb(104,9,52);
+    background: -moz-linear-gradient(45deg, rgba(104,9,52,1) 0%, rgba(16,12,48,1) 50%, rgba(10,22,164,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(104,9,52,1) 0%, rgba(16,12,48,1) 50%, rgba(10,22,164,1) 100%);
+    background: linear-gradient(45deg, rgba(104,9,52,1) 0%, rgba(16,12,48,1) 50%, rgba(10,22,164,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#680934",endColorstr="#0a16a4",GradientType=1);
+    height: 100vh;
+}
+.navbar{
+    height: 50px;
+    width: 100%;
+}
+.leftnav{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    h2{
+        color: white;
+    }
+    #Raundale{
+        color: red;
+        padding-left: 5px;
+    }
+    
+}
+.rightnav{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: flex-start; */
+    
+    
+    gap: 70px;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.leftdiv{
+    display: flex;
+    float: left;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: baseline;
+    h4{
+        margin-left: 20%;
+        font-size: large;
+        color: white;
+        margin-bottom: 10px;
+    }
+}
+
+#name{
+    font-size: 50px;
+    margin: 0%;
+    color: red;
+}
+#dev{
+    font-size: 50px;
+    margin: 0%;
+    -webkit-text-stroke: 0.4px;
+    -webkit-text-stroke-color: white;
+}
+#cnt{
+    text-decoration: none;
+    color: white;
+    border: 2px solid;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border-color: red;
+}
+
+.rightdiv{
+    display: flex;
+    float: right;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.forimg{
+    height: 446.4px;
+    width: 297.6px;
+    background-color: rgba(255, 255, 255, 0.105);
+    display: flex;
+    border-radius: 30px;
+    padding: 10px;
+    img{
+        border-radius: 30px;
+    }    
+}
